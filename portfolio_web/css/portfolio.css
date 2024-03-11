@@ -486,7 +486,6 @@ fieldset {
 #SAP {
     display: grid;
     gap: 0.7rem;
-    min-height: 100%;
     grid-template-columns: 47% 47%;
     grid-template-areas:
         'SA .'
