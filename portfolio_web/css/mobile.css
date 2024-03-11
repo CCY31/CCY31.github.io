@@ -77,7 +77,15 @@
         'project1'
         'project2'
         'project3'
-        'project4';
+        'project4'
+        'project5'
+        'project6'
+        'project7'
+        'project8'
+        'project9'
+        'project10'
+        'project11';
+        grid-template-columns: 100%
     }
  
     #skills
@@ -97,9 +105,14 @@
         max-width: 75%;
     }
 
-    #project1, #project2, #project3, #project4
+    #projects figure {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8, #project9, #project10, #project11
     {
-        margin-left: 10pt;
+        margin-left: 20pt;
         margin-right: 20pt;
     }
 
