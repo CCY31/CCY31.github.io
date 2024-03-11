@@ -407,6 +407,12 @@ fieldset {
     margin-right: 10pt;
 }
 
+#projects figure img 
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 #P {
     grid-area: P;
     margin-bottom: 10pt;
