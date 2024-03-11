@@ -1,0 +1,125 @@
+/* Reset the css */
+@import url("reset.css");
+
+/* Styles for whole document */
+body
+{
+    margin: auto;
+    font-size: 18pt;
+    font-family: 'Markazi Text';
+    padding-left: 50pt;
+    padding-right: 50pt;
+    padding-bottom: 5pt;
+    background-color: #304a6e;
+}
+
+/* Header (Name and occupation) */
+hgroup
+{
+    background-color: #668dc0;
+    font-family: 'Passion One';
+    padding: 5pt;
+    color:aliceblue;
+}
+h1
+{
+    font-size: 36pt;
+}
+h2
+{
+    font-size: 20pt;
+    padding-bottom: 5pt;
+}
+
+/* Navigation bar and links */
+nav ul li
+{
+    display: inline;
+    padding-right: 7.5pt;
+}
+nav
+{
+    font-size: 20pt;
+    padding: 5pt;
+    background-color: #c0d0ef;
+    font-family: 'Passion One';
+}
+
+/* Article group */
+article
+{
+    background-color: beige;
+    padding-left: 5pt;
+    padding-right: 5pt;
+}
+h3
+{
+    font-family: 'Passion One';
+    font-size: 18pt;
+    padding-top: 5pt;
+    border-bottom: solid;
+}
+figcaption
+{
+    font-style: oblique;
+    color: #69c2a3;
+}
+
+/* Anchor styles */
+a:hover
+{
+    background-color: #c0d0ef;
+}
+a:link
+{
+    font-family: 'Luckiest Guy';
+}
+a:link 
+{
+    color: #c28988;
+}
+a:visited 
+{
+    color: #806eb4;
+}
+p
+{
+    padding-top: 10pt;
+}
+img
+{
+	border: 1pt;
+	border-color: #888888;
+	border-style: solid;
+}
+
+/* Show decimal points for ordered list (revert reset.css */
+ol li
+{
+    list-style-type:decimal;
+    list-style-position: inside;
+}
+
+/* Footer and copyright section */
+footer
+{
+    padding-left: 5pt;
+    background-color: #668dc0;
+    color: beige;
+    padding-top: 10pt;
+}
+footer + p
+{
+    padding-left: 5pt;
+    background-color: #668dc0;
+    color: beige;
+    padding-top: 5pt;
+    padding-bottom: 10pt;
+    font-style: italic;
+}
+
+/* Hide empty paragraph to reduce spacing between sections */
+section + p
+{
+    display:none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Portfolio</title>
+        <link href='css/portfolio.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Carter+One&family=Francois+One&family=Neuton&family=Passion+One&family=Peddana&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+            @import url(css/mobile.css) screen and (max-width: 768px);
+        </style>
+    </head>
+    <body>
+        <hgroup>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="Home.html">
+                                <figure><img src="images/Logo.png" width="70" height="30" /></figure>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="toHome"><a href="Home.html">Lily Chou</a></div>
+                        </li>
+                        <li><a href="About Me.html">About Me</a></li>
+                        <li><a href="Experience and Education.html">Experiece</a></li>
+                        <li><a href="Experience and Education.html">Education</a></li>
+                        <li><a href="Skills and Projects.html">Skills</a></li>
+                        <li><a href="Skills and Projects.html">Projects</a></li>
+                        <li><a href="Login.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </hgroup>
+        <article id="loginPage">
+            <form action='addPost.html'>
+                <fieldset>
+                    <legend>Login</legend>
+                    <p>
+                        <label>User Name</label>
+                        <input type="email" required name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" />
+                    </p>
+                    <p>
+                        <label>Password</label>
+                        <input type="password" required name="password" pattern=".{8,}">
+                    </p>
+                    <button type="submit">Login <i class="fas fa-sign-in-alt"></i></button>
+                </fieldset>
+            </form>
+        </article>
+    </body>
+</html>

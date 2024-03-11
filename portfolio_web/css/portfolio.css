@@ -1,0 +1,562 @@
+@import url("reset.css");
+
+/* Common Rules for all pages*/
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Peddana', serif;
+    color: aliceblue;
+    background-image: url("../images/Background.png");
+    background-size: 100%;
+    min-height: 100%;
+    display: grid;
+    gap: 0.7rem;
+    grid-template-areas:
+        'header header header header'
+        'article article article article'
+        'footer footer footer footer';
+}
+
+h2 {
+    font-family: 'Boogaloo', cursive;
+    font-size: 26pt;
+    margin-top: 15pt;
+    grid-area: h2;
+}
+
+h3 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 15pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+}
+
+h4 {
+    font-size: 15pt;
+    font-family: 'Neuton', serif;
+}
+
+button {
+    text-align: center;
+    border-radius: 5pt;
+    color: #304a6e;
+    background-color: #c0d0ef;
+    border: #c0d0ef 1pt solid;
+    font-family: 'Passion One', cursive;
+    font-size: 30pt;
+    margin-left: 46%;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    margin-top: 30pt;
+}
+
+ul li {
+    font-size: 18pt;
+}
+
+p {
+    font-size: 18pt;
+}
+
+article {
+    grid-area: article;
+}
+
+hgroup {
+    grid-area: header;
+}
+
+/*Header*/
+header {
+    background-color: #c0d0ef;
+    font-size: 24pt;
+    padding: 10pt;
+    text-align: center;
+}
+
+hgroup h1 {
+    font-size: 36pt;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding-right: 10pt;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16pt;
+}
+
+#logo {
+    margin-top: 20pt;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* Login page */
+legend {
+    background-color: #c0d0ef;
+    font-family: 'Roboto Slab', serif;
+    width: 80%;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    font-size: 20pt;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    color: black;
+    margin-top: 10pt;
+}
+
+fieldset {
+    border: 1pt solid #c0d0ef;
+    background-color: beige;
+}
+
+#loginPage body {
+    height: 100%;
+}
+
+#loginPage form {
+    text-align: center;
+    margin-top: 8%;
+}
+
+#loginPage label {
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    margin-top: 10pt;
+}
+
+#loginPage button {
+    margin-left: inherit;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+/* Home page*/
+#home {
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    font-size: 36pt;
+    color: aliceblue;
+    margin: 20pt;
+}
+
+/*About me page*/
+#aboutme {
+    min-height: 100%;
+    display: grid;
+    gap: 0.7rem;
+    grid-template-areas:
+        'photo introduction introduction introduction introduction'
+        'research introduction introduction introduction introduction';
+}
+
+#aboutme figcaption {
+    font-family: 'Neuton', serif;
+    font-size: 15pt;
+    margin-top: 5pt;
+    margin-left: 80pt;
+}
+
+#photo {
+    grid-area: photo;
+    margin-left: 10pt;
+    margin-bottom: 20pt;
+}
+
+#photo h2 {
+    margin-bottom: 10pt;
+}
+
+#photo figure img {
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.69);
+}
+
+#aboutme article {
+    grid-area: introduction;
+}
+
+#research {
+    grid-area: research;
+    background-color: beige;
+    color: black;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.69);
+    margin-left: 10pt;
+    padding: 5pt;
+    margin-bottom: 20pt;
+}
+
+#introduction {
+    grid-area: introduction;
+    margin: 40pt;
+    border: 0.15em beige solid;
+    border-radius: 30pt;
+    padding: 10pt;
+    padding-top: 15pt;
+}
+
+/*Experience and Education page*/
+#EE {
+    padding: 10px;
+}
+
+#title {
+    display: flex;
+}
+
+#title h2 {
+    width: 49%;
+    text-align: center;
+}
+
+#timeline {
+    position: relative;
+    width: 100%;
+}
+
+.verticalLine {
+    position: absolute;
+    width: 2px;
+    background: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.experience,
+.education {
+    position: relative;
+    width: 50%;
+}
+
+.experience {
+    left: 0;
+}
+
+.education {
+    left: 50%;
+}
+
+.dateCircle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -9px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.education .dateCircle {
+    left: -10px;
+}
+
+.line {
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: white;
+    z-index: 1;
+}
+
+.education .line {
+    left: 8px;
+}
+
+.date {
+    position: absolute;
+    top: calc(50% - 8px);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 20pt;
+}
+
+.experience .date {
+    right: -135px;
+    width: 120px;
+    text-align: left;
+}
+
+.education .date {
+    left: -120px;
+}
+
+#EE #timeline .fas {
+    position: absolute;
+    width: 40px;
+    height: 22px;
+    padding: 9px 0;
+    top: calc(50% - 20px);
+    border: 2px solid #304a6e;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #304a6e;
+    z-index: 1;
+}
+
+.experience .fas {
+    right: 56px;
+}
+
+.education .fas {
+    left: 56px;
+}
+
+.content {
+    background-color: beige;
+    position: relative;
+}
+
+.experience .content {
+    margin-right: 50px;
+    padding: 30px 90px 30px 30px;
+    border-radius: 0 500px 500px 0;
+}
+
+.education .content {
+    margin-left: 50px;
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+}
+
+.content h2 {
+    margin: 0 0 10px 0;
+    font-size: 20pt;
+    color: #304a6e;
+}
+
+.content p {
+    margin: 0;
+    color: black;
+}
+
+
+/*Skills and projects page*/
+#SA {
+    grid-area: SA;
+    margin-left: 20pt;
+}
+
+#skills {
+    grid-area: skills;
+    background-color: beige;
+    color: black;
+    margin-left: 70pt;
+    margin-right: 40pt;
+    padding: 5pt;
+    border: beige;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.69);
+}
+
+#skills i {
+    font-size: 12pt;
+}
+
+#achievements {
+    grid-area: achievements;
+    background-color: beige;
+    color: black;
+    margin-left: 70pt;
+    margin-right: 40pt;
+    padding: 5pt;
+    border: beige;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.69);
+}
+
+#projects {
+    grid-area: projects;
+    display: grid;
+    gap: 1rem 4%;
+    grid-template-columns: 48% 48%;
+    grid-template-areas:
+        'P .'
+        'project1 project4'
+        'project2 project4'
+        'project3 project4'
+        'project5 project6'
+        'project7 project8'
+        'project9 project10'
+        'project11 .'
+}
+
+#projects figure {
+    text-align:center;
+    margin-top: 10pt;
+}
+
+#projects figcaption {
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
+#P {
+    grid-area: P;
+    margin-bottom: 10pt;
+    margin-left: 20pt;
+}
+
+#project1 {
+    grid-area: project1;
+}
+
+#project2 {
+    grid-area: project2;
+}
+
+#project3 {
+    grid-area: project3;
+}
+
+#project4 {
+    grid-area: project4;
+}
+
+#project5 {
+    grid-area: project5;
+}
+
+#project6 {
+    grid-area: project6;
+}
+
+#project7 {
+    grid-area: project7;
+}
+
+#project8 {
+    grid-area: project8;
+}
+
+#project9 {
+    grid-area: project9;
+}
+
+#project10 {
+    grid-area: project10;
+}
+
+#project11 {
+    grid-area: project11;
+}
+
+#project1,
+#project2,
+#project3,
+#project4,
+#project5,
+#project6,
+#project7,
+#project8,
+#project9,
+#project10,
+#project11 {
+    background-color: rgb(244, 244, 194);
+    color: black;
+    padding: 5pt;
+    margin-left: 50pt;
+    margin-bottom: 10pt;
+    font-size: 18pt;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.69);
+}
+
+#SAP {
+    display: grid;
+    gap: 0.7rem;
+    min-height: 100%;
+    grid-template-columns: 47% 47%;
+    grid-template-areas:
+        'SA .'
+        'skills achievements'
+        'projects projects'
+}
+
+/*Add post page*/
+#title {
+    margin: 10pt;
+}
+
+/*Footer*/
+footer {
+    grid-area: footer;
+    width: 100%;
+}
+
+footer figure {
+    padding: 20pt;
+    text-align: center;
+    margin-top: 10pt;
+}
+
+footer figure img {
+    padding: 15pt;
+}
+
+.commonFooter {
+    background-color: #668dc0;
+    font-family: 'Francois One', sans-serif;
+    font-size: 16pt;
+    padding-top: 7pt;
+}
+
+.commonFooter p {
+    font-family: 'Neuton', serif;
+    font-size: 12pt;
+    margin-top: 5pt;
+}
+
+/*Links*/
+a:link {
+    color: #c28988;
+}
+
+a:visited {
+    color: #6f5aaf;
+}
+
+.toHome a {
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+}
+
+/*Add post page*/
+textarea {
+    resize: none;
+}
+
+#title {
+    margin: 10pt;
+}
+
+#addPost textarea {
+    width: 91%;
+    margin-left: 4%;
+}
+
+#addPost #toolbar {
+    display: flex;
+}
+
+#addPost #toolbar button {
+    margin-left: 25%;
+    display: block;
+    margin-bottom: 5pt;
+}

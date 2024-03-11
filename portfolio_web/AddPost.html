@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Portfolio</title>
+        <link href='css/portfolio.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Carter+One&family=Francois+One&family=Neuton&family=Passion+One&family=Peddana&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+        <style>
+            @import url(css/mobile.css) screen and (max-width: 768px);
+        </style>
+    </head>
+    <body id="addPost">
+        <hgroup>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <figure><img src="images/Logo.png" width="70" height="30" /></figure>
+                        </li>
+                        <li>
+                            <div class="toHome"><a href="Home.html">Lily Chou</a></div>
+                        </li>
+                        <li><a href="About Me.html">About Me</a></li>
+                        <li><a href="Experience and Education.html">Experiece</a></li>
+                        <li><a href="Experience and Education.html">Education</a></li>
+                        <li><a href="Skills and Projects.html">Skills</a></li>
+                        <li><a href="Skills and Projects.html">Projects</a></li>
+                        <li><a href="Login.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </hgroup>
+        <article id="addPost">
+            <form>
+                <fieldset>
+                    <legend>Add Blog</legend>
+                    <p id="title">
+                        <label>Title</label>
+                        <input type="text" required name="text"/>
+                    </p>
+                    <p>
+                        <textarea placeholder="Enter your text here" rows="15" required></textarea>
+                    </p>
+                    <p id="toolbar">
+                        <button>Post <i class="fas fa-sign-in-alt"></i></button>
+                        <button>Clear <i class="fas fa-sign-in-alt"></i></button>
+                    </p>
+                </fieldset>
+            </form>
+        </article>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+@import url(reset.css);
+
+body
+{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header
+{
+    font-family: 'Play', sans-serif;
+    color: #D3D3D3;
+    background-color: #296218;
+    grid-area: header;
+    padding: 0.5rem;
+    font-size: 24pt;
+    padding: 10pt;
+    margin: 5pt;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li
+{
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 16pt;
+    padding-right: 15pt;
+}
+
+header nav ul
+{
+    display: flex;
+}
+
+header nav
+{
+    margin-left: auto;
+}
+
+h1
+{
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 5pt;
+}
+
+h2
+{
+    background-color: #296218;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    padding: 10pt;
+    text-align: center;
+}
+
+figure img
+{
+    width: 375px;
+    height: 250px;
+    margin-top: 0.5em;
+}
+
+ul li img
+{
+    width: 30pt;
+    height: 30pt;
+    padding-top: 5pt;
+}
+
+footer
+{
+    background-color: #296218;
+    grid-area: footer;
+    color:white;
+    text-align: center;
+    margin: 5pt;
+    font-size: 8pt;
+    padding: 3pt;
+}
+
+#links 
+{
+    grid-area: links;
+    background-color: #F5F5F5;
+    margin-left: 5pt;
+    padding: 5pt;
+    line-height: 20pt;
+    color: #296218;
+}
+
+#interests
+{
+    background-color: #F0E4D4;
+    grid-area: interests;
+    margin-left: 5pt;
+    padding: 5pt;
+}
+
+#skills
+{
+    grid-area: skills;
+    border: 10pt solid #F5F5F5;
+    margin-left: 5pt;
+    padding: 5pt;
+}
+
+#movies
+{
+    grid-area: movies;
+    border: 10pt solid #F5F5F5;
+    padding: 5pt;
+    margin-bottom: 75pt;
+}
+
+#hobbies
+{
+    grid-area: hobbies;
+    border: 10pt solid #F5F5F5;
+    padding: 5pt;
+}
+
+#myself
+{
+    grid-area: myself;
+    margin-left: 5pt;
+    padding: 5pt;
+    display: flex;
+}
+
+#education
+{
+    grid-area: education;   
+    padding: 10pt;
+}
+
+.text
+{
+    line-height: 20pt;
+}
+
+.d-flex, .overlayed
+{
+    display: flex;
+}
+
+.school
+{
+    width: 50pt;
+}
+
+.container
+{
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'interests myself myself myself hobbies' 
+    'links myself myself myself movies'
+    'skills education education education movies'
+    'footer . . . .';
+    gap: 0.7rem;
+}
+
+.skillContainer li
+{
+    align-items: center;
+    padding: 5pt 0pt;
+    display: grid;
+    grid-template-columns: 40pt 100pt;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}

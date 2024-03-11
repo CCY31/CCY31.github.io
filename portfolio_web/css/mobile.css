@@ -1,0 +1,193 @@
+@media screen and (max-width:768px) 
+{
+    /*Common rules for all pages when mobile.css is applied*/
+    header nav
+    {
+        margin-left: inherit;
+        text-align: center;
+        padding-top: 5pt;
+    }
+    
+    header nav ul
+    {
+        flex-wrap: wrap;
+    }
+    
+    header nav ul a
+    {
+        font-size: 13pt;
+    }
+ 
+   .toHome 
+    {
+        display:none;
+    }
+    
+    article a button
+    {
+        margin-left: 36%;
+    }
+ 
+    header nav ul li
+    {
+        padding-top: 5pt;
+    }
+
+    footer
+    {
+        text-align: center;
+    }
+
+    /*Home page*/
+
+    /*About me page*/
+    #aboutme
+    {
+        display: grid;
+        gap: 0.7rem;
+        grid-template-areas: 
+        'photo'
+        'research'
+        'introduction';
+        text-align: center;
+    }
+    
+    #aboutme figcaption
+    {
+        margin-left: 20pt;
+    }
+
+    /*Skills and projects page*/
+    #SAP
+    {
+        display: grid;
+        gap: 0.7rem;
+        grid-template-columns: inherit;
+        grid-template-areas:
+        'SA'
+        'skills'
+        'achievements'
+        'projects'
+    }
+ 
+    #projects
+    {
+        grid-template-areas:
+        'P'
+        'project1'
+        'project2'
+        'project3'
+        'project4';
+    }
+ 
+    #skills
+    {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+
+    #achievements
+    {
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+
+    #projects img
+    {
+        max-width: 75%;
+    }
+
+    #project1, #project2, #project3, #project4
+    {
+        margin-left: 10pt;
+        margin-right: 20pt;
+    }
+
+    #sectiona
+    {
+        grid-area: SA;
+    }
+
+    #sectionb
+    {
+        grid-area: P;
+    }
+ 
+    /* Experience and Education page*/
+    #EE
+    {
+        display: grid;
+        grid-template-areas: 
+        'title'
+        'experience'
+        'education';
+    }
+
+    #EE #title
+    {
+        display: none;
+        grid-area: title;
+    }
+    
+    .verticalLine
+    {
+        left: 80px;
+    }
+    
+    .experience, .education
+    {
+        width: calc(100% - 30px);
+        padding-left: 30px;
+    }
+
+    .experience
+    {
+        grid-area: experience;
+    }
+    
+    .education
+    {
+        left: 0%;
+        grid-area: education;
+    }
+    
+    .experience .dateCircle, .education .dateCircle
+    {
+        left: 72px;
+    }
+    
+    .experience .line, .education .line 
+    {
+        left: 80px;
+    }
+    
+    .experience .date, .education .date 
+    {
+        left: 0px;
+        width: 60px;
+        text-align: center;
+    }
+    
+    .experience .fas, .education .fas
+    {
+        right: auto;
+        left: 130px;
+    }
+    
+    .experience .content, .education .content 
+    {
+        margin-left: 80px;
+        margin-right: 50px;
+        padding: 30px 30px 30px 90px;
+        border-radius: 500px 0 0 500px;
+        margin-bottom: 50px;
+    }
+ 
+ 
+    /*Add post page*/
+    #addPost #toolbar button
+    {
+        margin-left: 8%;
+        font-size: 16pt;
+    }
+}
